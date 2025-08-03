@@ -1,0 +1,40 @@
+body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: radial-gradient(circle at center, #0d1b2a 0%, #000000 100%);
+      color: red;
+      font-family: 'Orbitron', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1 {
+      font-size: 3em;
+      text-shadow: 0 0 10px red, 0 0 20px red;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      max-width: 600px;
+      text-align: center;
+      font-size: 1.2em;
+      color: #b8ffe8;
+    }
+
+    .stars {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: white;
+      animation: twinkle 2s infinite alternate;
+      opacity: 0.8;
+      border-radius: 50%;
+    }
+
+    @keyframes twinkle {
+      from { opacity: 0.2; }
+      to { opacity: 0.8; }
+    }
