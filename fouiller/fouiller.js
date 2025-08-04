@@ -5,3 +5,15 @@
       star.style.left = Math.random() * 100 + "%";
       document.body.appendChild(star);
     }
+
+     function checkCode() {
+      const code = document.getElementById("codeInput").value;
+      const feedback = document.getElementById("feedback");
+      if(code === "1994") {
+        feedback.textContent = "Accès autorisé. Système activé.";
+        feedback.style.color = "#00ff88";
+      } else {
+        feedback.textContent = "Code incorrect.";
+        feedback.style.color = "#ff5555";
+      }
+    }

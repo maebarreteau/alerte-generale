@@ -10,7 +10,16 @@
 <body>
     <h1>La capsule de repos</h1>
   <p>Vous mettez cinq bonnes minutes à trouver le manuel. Dans un espace clos comme la cabine, il est rare de perdre des affaires. C'est vraiment que vous ne vouliez pas le voir ce pauvre bouquin. Vous l'ouvrez et allez à la page évoquant les alertes générales. Evidemment, degueulasse comme vous êtes, vous avez versé du café (ce n'est pas vraiment du café, mais le nom serait trop compliqué à comprendre pour un humain comme vous) sur cette page.</p>
-  <p>Vous vous souvenez alors que le manuel est aussi consultable depuis le réseau internet du vaisseau. </p> 
+  <a href="codex.html" class="codex-link">
+    <img src="../images/codex.png" class="codex"> 
+  </a>
+
+  <div class="screen">
+    <input type="text" id="codeInput" placeholder="Entrer le code" />
+    <button class="button" onclick="checkCode()">Valider</button>
+    <p id="feedback"></p>
+  </div>
+
 
     <script src="fouiller.js"></script>
 </body>
