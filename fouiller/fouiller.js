@@ -10,10 +10,11 @@
       const code = document.getElementById("codeInput").value;
       const feedback = document.getElementById("feedback");
       if(code === "1994") {
-        feedback.textContent = "Accès autorisé. Système activé.";
-        feedback.style.color = "#00ff88";
+        window.location.href = "../couloir/couloir.html";
       } else {
         feedback.textContent = "Code incorrect.";
         feedback.style.color = "#ff5555";
       }
     }
+
+      

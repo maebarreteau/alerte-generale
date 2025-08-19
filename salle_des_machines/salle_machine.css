@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at center, #0d1b2a 0%, #000000 100%);
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+}
+
+h1 {
+  font-size: 3em;
+  text-shadow: 0 0 10px red, 0 0 20px red;
+  text-align: center;
+  margin-top: 20px;
+}
+
+p {
+  max-width: 600px;
+  text-align: center;
+  font-size: 1.2em;
+  color: #b8ffe8;
+  margin: 10px auto;
+}
+
+
+.stars {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: white;
+      animation: twinkle 2s infinite alternate;
+      opacity: 0.8;
+      border-radius: 50%;
+    }
+
+    @keyframes twinkle {
+      from { opacity: 0.2; }
+      to { opacity: 0.8; }
+    }
+
+    #game {
+  margin: 20px auto;
+  width: 600px;
+  height: 400px;
+  position: relative;
+  background: #111;
+  border: 2px solid #555;
+}
